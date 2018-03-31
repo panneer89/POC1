@@ -1,0 +1,12 @@
+[{"Indoor Games":[
+        {"name":"CHESS","numbers":12},
+        {"name":"TABLE TENNIS","numbers":25},
+        {"name":"BILLIARDS","numbers":8},
+        {"name":"CARROM","numbers":18}]},
+    {"Outdoor Games":[
+        {"name":"KABADDI","numbers":32},
+        {"name":"BADMINTON","numbers":45},
+        {"name":"VOLLYBALL","numbers":25},
+        {"name":"CRICKET","numbers":78}]
+        
+}];

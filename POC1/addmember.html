@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Club Manager - Add Member</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css"></link>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"></link>
+	</head>
+	<body>
+		<header>
+			<h1>CLUB MANAGER</h1>
+		</header>
+		<div class='container-fluid container-custom'>
+			<div class='row'>
+				<div class='col-md-1'>
+					<nav>
+						<ul>
+							<li><a href="index.html">Dashboard</a></li>
+							<li class='active-style'><a href="addmember.html">Add New Member</a></li>
+							<li><a href="addsport.html">Add Sport</a></li>
+							<li><a href="addevent.html">Add Event</a></li>
+							<li><a href="#">View Members</a></li>
+						</ul>
+					</nav>
+				</div>
+				<section class='col-md-11 right-wrapper'>
+					<div class='content-main'>
+						<h2>Add Member</h2>
+						<form>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="firstname control-label">First Name<span class='mand-field'>*</span></label>
+									<input id="firstname" type="text" class="form-control" name="firstname" placeholder="">
+									<span id='fnamemessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="lastname">Last Name</label>
+									<input id="lastname" type="text" class="form-control" name="lastname" placeholder="">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="gender control-label">Gender<span class='mand-field'>*</span></label>
+									<select class="form-control" id="gender">
+										<option></option>
+										<option>Male</option>
+										<option>Female</option>
+									</select>
+									<span id='gendermessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								
+								<div class='col-md-6 sandbox-container'>
+									<label for="dob">DOB<span class='mand-field'>*</span></label>
+									<div class="input-group date">
+									    <input type="text" id="datetimepicker" class="form-control" name="date">
+									    <label class="input-group-addon btn" for="date">
+									       <span class="fa fa-calendar open-datetimepicker"></span>
+									    </label>
+									</div>
+									<span id='dobmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="fathername">Father Name<span class='mand-field'>*</span></label>
+									<input id="fathername" type="text" class="form-control" name="fathername" placeholder="">
+									<span id='fanamemessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="mothername">Mother Name</label>
+									<input id="mothername" type="text" class="form-control" name="mothername" placeholder="">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="address1 control-label">Address 1<span class='mand-field'>*</span></label>
+									<input id="address1" type="text" class="form-control" name="address1" placeholder="">
+									<span id='add1message' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="address2">Address 2</label>
+									<input id="address2" type="text" class="form-control" name="address2" placeholder="">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="address3">Address 3</label>
+									<input id="address3" type="text" class="form-control" name="address3" placeholder="">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="pincode">Pincode<span class='mand-field'>*</span></label>
+									<input id="pincode" type="text" class="form-control" name="pincode" placeholder="">
+									<span id='pinmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="email">Email Address<span class='mand-field'>*</span></label>
+									<input id="email" type="text" class="form-control" name="email">
+									<span id='emailmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="contact">Mobile Number<span class='mand-field'>*</span></label>
+									<input id="contact" type="text" class="form-control" name="contact">
+									<span id='mobilemessage' class='warn-message'></span>
+								</div>										
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="secondcontact">Secondary Number<span class='mand-field'>*</span></label>
+									<input id="secondcontact" type="text" class="form-control" name="secondcontact">
+									<span id='secmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="sport control-label">Sporting Event<span class='mand-field'>*</span></label>
+									<select class="form-control" id="sport">
+										<option></option>
+									</select>
+									<span id='sportmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="session control-label">Session Timings<span class='mand-field'>*</span></label>
+									<select class="form-control" id="session">
+										<option></option>
+									</select>
+									<span id='sessionmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="coach">Coach Name</label>
+									<input id="coach" type="text" class="form-control" name="team" disabled>
+								</div>										
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="amount">Membership Fee</label>
+									<input id="amount" type="text" class="form-control" name="amount" disabled>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="occupation control-label">Occupation<span class='mand-field'>*</span></label>
+									<input id="occupation" type="text" class="form-control" name="occupation">
+									<span id='occupmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="medicalcond">Existing Medical Condition<span class='mand-field'>*</span></label>
+									<input id="medicalcond" type="text" class="form-control" name="medicalcond">
+									<span id='medcondmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="height">Height<span class='mand-field'>*</span></label>
+									<input id="height" type="text" class="form-control" name="height">
+									<span id='heightmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class='col-md-6'>
+									<label for="weight">Weight<span class='mand-field'>*</span></label>
+									<input id="weight" type="text" class="form-control" name="weight">
+									<span id='weightmessage' class='warn-message'></span>
+								</div>
+							</div>
+							<div class='btn-wrapper'>
+								<div class='row'>
+									<div class='col-md-3'>
+										<button class="btn btn-success col-md-8" id='submit'>Submit</button>
+									</div>
+									<div class='col-md-3'>
+										<button id="clear" class="btn btn-default col-md-8">Clear</button>
+									</div>
+									<div class='col-md-3'>
+										<button type="" class="btn btn-danger col-md-8">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</section>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/library.js"></script>
+	</body>
+</html>

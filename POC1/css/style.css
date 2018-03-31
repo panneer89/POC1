@@ -1,0 +1,48 @@
+header {
+	padding: 25px 500px;
+    background-color: #9b9b9b;
+}
+header h1 {
+	font: 35px Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+nav {
+	background-color: #9b9b9b;
+    min-height: 543px;
+
+}
+nav ul li a {
+    padding: 30px 6px;
+    display: inline-block;
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.active-style a, .active-style {
+    background-color: #CCC;
+    color: #000;
+}
+.container-custom {
+    padding-left: 0;
+}
+.content-main {
+    max-height: 543px;
+    overflow-y: scroll;
+}
+.right-wrapper{
+    padding-right: 0;
+}
+.mand-field, .warn-message {
+    color: #ff0000;
+    padding-left: 3px;
+}
+.btn-wrapper  {
+    padding-top: 20px;
+}
+
